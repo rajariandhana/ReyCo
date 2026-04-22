@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center gap-2 my-12 text-sm">
+    <footer className="flex items-center justify-between gap-2 px-12 py-6 text-sm w-full">
       <span className="flex items-center justify-center">
-        reyco@ralfazza.com
+        © ReyCo {new Date().getFullYear()} | reyco@ralfazza.com
       </span>
       <ul className="flex items-center justify-center gap-2">
         <li>
@@ -67,7 +67,6 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <span id="currentYear">{new Date().getFullYear()}</span>
     </footer>
   );
 };
